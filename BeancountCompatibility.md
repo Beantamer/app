@@ -20,9 +20,8 @@
         * `title`, `operating_currency` (currently not actually used)
 * Not yet implemented, but in plan
     * saving items will lost their inline comments
-    * balance checking is different with Beancount, currently it is much simpler: all currency will have a resolution of 0.01 (also it doesn't work for transactions with costs)
     * account: open date and close date is not interpreted, saving will not change them
-    * `document`
+    * `document` and `event`
     * price and balance is only displayed but not editable
 * Unsupported features
     * `pad` directives is ignored, it is recommended to explicitly pad with transactions
