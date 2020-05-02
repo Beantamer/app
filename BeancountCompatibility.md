@@ -18,13 +18,13 @@
         * `booking_method`
         * `name_assets`, `name_liabilities`, etc.
         * `title`, `operating_currency` (currently not actually used)
+    * `pad` support is very limited, it only support `balance`s followed immediately, and only support initiating an account.
 * Not yet implemented, but in plan
     * saving items will lost their inline comments
     * account: open date and close date is not interpreted, saving will not change them
     * `document` and `event`
     * price and balance is only displayed but not editable
 * Unsupported features
-    * `pad` directives is ignored, it is recommended to explicitly pad with transactions
     * ignored directive: `event`, `note`, `query`
     * `option` which are not listed above
     * ignored directives because we don't know how to interpret them: `custom`, `plugin`
