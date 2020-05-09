@@ -32,6 +32,11 @@ sealed class SmsImporter {
     ): SmsImporter()
 }
 
+
+/**
+ * Built-in SMS importers, they are tried in the order defined. The last one is generic importer
+ * which tries to extract partial information by matching substrings with defined regex.
+ */
 val smsImporters: List<SmsImporter> = listOf(
     SmsImporter.Exact( // China Merchant Bank Checking
         "95555",
