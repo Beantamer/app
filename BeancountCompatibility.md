@@ -34,7 +34,7 @@
     * we support metadata `time` in transactions and price, `asset-class` in currency
     * some other features is implemented by app-specific metadata, like settings for SMS importers
 * Booking is different with Beancount
-    * only STRICT, FIFO, LIFO is supported
+    * booking type STRICT, FIFO, LIFO, NONE is supported
     * basics should work fine
     * prefer write out postings more explicitly, this app prefer infer less stuff, especially a incomplete amount (e.g. without number: "USD"; without currency: "123") will be treated as no amount specified at all
     * all currency tolerance is fixed at 0.005, we don't plan to infer tolerance, but provide a per-currency settings instead in the future
